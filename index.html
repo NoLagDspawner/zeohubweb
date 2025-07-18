@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeoHub - Premium Game Scripts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    
+    <header class="app-header">
+        <div class="header-content">
+            <div class="brand">
+                <div class="logo">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>ZeoHub</h1>
+                    <p>Premium scripts for your favorite games</p>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users pulse"></i>
+                    </div>
+                    <div>
+                        <div class="stat-value" id="online-count">1,238</div>
+                        <div class="stat-label">Users Online</div>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div>
+                        <div class="stat-value">24.8K</div>
+                        <div class="stat-label">Today's Visits</div>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div>
+                        <div class="stat-value">150K</div>
+                        <div class="stat-label">Total Executions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="app-container">
+        <main class="main-content">
+            <div class="tabs">
+                <div class="tab active" data-game="gag">
+                    <i class="fas fa-seedling"></i> Grow A Garden
+                </div>
+                <div class="tab" data-game="pet">
+                    <i class="fas fa-gem"></i> Pet Simulator
+                </div>
+                <div class="tab" data-game="adopt">
+                    <i class="fas fa-dog"></i> Adopt Me
+                </div>
+                <div class="tab" data-game="mm2">
+                    <i class="fas fa-skull"></i> Murder Mystery 2
+                </div>
+            </div>
+            
+            <section>
+                <div class="section-title">
+                    <h2>Featured Scripts</h2>
+                </div>
+                
+                <div class="game-cards">
+                    <div class="game-card game-gag" data-game="gag">
+                        <div class="game-thumbnail" style="background-image: url('https://tr.rbxcdn.com/8f9c3d7c8e6c8f0b9c8c8c8c8c8c8c8c/352/352/Image/Png')">
+                            <div class="game-badge">Popular</div>
+                            <div class="game-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">
+                                <i class="fas fa-seedling"></i>
+                                Egg Predictor
+                            </h3>
+                            <p class="game-description">Predict which egg you'll get next in Grow A Garden with this advanced script</p>
+                            
+                            <div class="code-block">
+                                <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/GrowAGarden/main/Load/EggRandomizer.lua"))()</pre>
+                                <button class="copy-btn">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                            
+                            <div class="game-meta">
+                                <div class="game-updated">
+                                    <i class="fas fa-clock"></i>
+                                    Updated 2 hours ago
+                                </div>
+                                <div class="game-version">v2.1.4</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card game-pet" data-game="pet">
+                        <div class="game-thumbnail" style="background-image: url('https://tr.rbxcdn.com/8f9c3d7c8e6c8f0b9c8c8c8c8c8c8c8c/352/352/Image/Png')">
+                            <div class="game-badge">New</div>
+                            <div class="game-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">
+                                <i class="fas fa-gem"></i>
+                                Auto Farm
+                            </h3>
+                            <p class="game-description">Automatically collect gems and pets in Pet Simulator with this powerful script</p>
+                            
+                            <div class="code-block">
+                                <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/PetSimulator/main/AutoFarm.lua"))()</pre>
+                                <button class="copy-btn">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                            
+                            <div class="game-meta">
+                                <div class="game-updated">
+                                    <i class="fas fa-clock"></i>
+                                    Updated 1 day ago
+                                </div>
+                                <div class="game-version">v1.0.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card game-adopt" data-game="adopt">
+                        <div class="game-thumbnail" style="background-image: url('https://tr.rbxcdn.com/8f9c3d7c8e6c8f0b9c8c8c8c8c8c8c8c/352/352/Image/Png')">
+                            <div class="game-icon">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">
+                                <i class="fas fa-dog"></i>
+                                Pet Collector
+                            </h3>
+                            <p class="game-description">Automatically collect and manage pets in Adopt Me with this script</p>
+                            
+                            <div class="code-block">
+                                <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/AdoptMe/main/PetCollector.lua"))()</pre>
+                                <button class="copy-btn">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                            
+                            <div class="game-meta">
+                                <div class="game-updated">
+                                    <i class="fas fa-clock"></i>
+                                    Updated 3 days ago
+                                </div>
+                                <div class="game-version">v0.9.2</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card game-mm2" data-game="mm2">
+                        <div class="game-thumbnail" style="background-image: url('https://tr.rbxcdn.com/8f9c3d7c8e6c8f0b9c8c8c8c8c8c8c8c/352/352/Image/Png')">
+                            <div class="game-badge">Updated</div>
+                            <div class="game-icon">
+                                <i class="fas fa-skull"></i>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">
+                                <i class="fas fa-skull"></i>
+                                ESP & Auto-Kill
+                            </h3>
+                            <p class="game-description">See through walls and automatically eliminate enemies in Murder Mystery 2</p>
+                            
+                            <div class="code-block">
+                                <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/MM2/main/ESP_AutoKill.lua"))()</pre>
+                                <button class="copy-btn">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                            </div>
+                            
+                            <div class="game-meta">
+                                <div class="game-updated">
+                                    <i class="fas fa-clock"></i>
+                                    Updated 5 days ago
+                                </div>
+                                <div class="game-version">v3.2.1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="activity-feed">
+                    <div class="activity-header">
+                        <h3 class="activity-title">Recent Executions</h3>
+                        <div class="activity-count" id="execution-count">1,238 Today</div>
+                    </div>
+                    
+                    <div class="activity-list" id="executions-list">
+                        <!-- Activity items will be added here dynamically -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="app-footer">
+        <div class="footer-content">
+            <p>© 2023 ZeoHub | Premium Roblox Script Executor</p>
+            <p>All scripts are provided as-is. Use at your own risk.</p>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
+</body>
+</html>
